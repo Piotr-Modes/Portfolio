@@ -94,7 +94,7 @@ Array.from(classname).forEach(function(element){
     
 ////////////////////////////////SMOOTH SCROLLING TO TARGET/////////////////////////////////////// 
     
-    let scrollSpeed = 80;
+    let scrollSpeed = 90/*80*/;
     let easing = 0.01;
     let y;
     let oldPageOff;
@@ -104,7 +104,8 @@ Array.from(classname).forEach(function(element){
       let targetOff = targetEl.offsetTop;
       let pageOff = window.pageYOffset;
       
-        easing<2?easing +=80/window.innerHeight:easing-=80/window.innerHeight;
+        //easing<2?easing +=80/window.innerHeight:easing-=80/window.innerHeight;
+        easing<2?easing +=0.1:easing-=0.1;
 
         Math.abs(targetOff-pageOff)<Math.abs(y)?y=Math.abs(targetOff-pageOff):y= scrollSpeed*easing;
         if(targetOff<pageOff){
@@ -168,9 +169,7 @@ Array.from(classname).forEach(function(element){
     
     
 ////////////////////////////////////BACKGROUND EFFECT/////////////////////////////////////////////   
-    
-    
-    
+   
       function init(){
        
         const c = document.getElementById('can');
@@ -179,6 +178,16 @@ Array.from(classname).forEach(function(element){
         c.height = window.innerHeight;
         let cW = c.width;
         let cH = c.height;
+          
+//CALCULATE CANVAS DEMENSIONS ON RESIZE        
+        window.onresize = function(event) {
+       
+            c.width = window.innerWidth;
+            c.height = window.innerHeight;
+            cW = c.width;
+            cH = c.height;
+          
+        };
           
         let phrases = [];
         let ticks = 0;
@@ -283,6 +292,7 @@ Array.from(classname).forEach(function(element){
               
           
         setInterval(loop,50);
+          
     }
     
     init();

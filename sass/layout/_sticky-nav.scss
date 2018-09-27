@@ -24,8 +24,8 @@
             margin: 0;
             padding: 0;
             
-            @media only screen and(max-width:600px) {display: none;}
-            
+            //@media only screen and(max-width:600px) {display: none;}
+        
             
             & a{
                 font-size: 1.7rem;
@@ -123,7 +123,8 @@
         background: linear-gradient(to left,darken($color-grey-dark,0%),darken($color-grey-dark,10%));
         height: 100vh;
         transform: translateX(110%);
-        padding: 20vh 0;
+        padding: 27vh 0;
+        opacity: 0;
 
         &__ul{
             height: 100vh;
@@ -147,15 +148,13 @@
         }
     }
 }
-        
-
 
 
 
 .overlay{
     
     background: linear-gradient(to left,darken($color-grey-dark,0%),darken($color-grey-dark,10%));
-    
+    opacity: 1;
     height: 100vh;
     transform: translateX(0) !important;
     padding: 27vh 0;

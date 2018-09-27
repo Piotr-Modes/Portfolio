@@ -56,6 +56,10 @@
             position:absolute;
             bottom:50%;
             
+            @media only screen and(max-width:950px){
+                height: .2rem;
+            }
+            
         }
         
         
@@ -247,7 +251,7 @@
 
 /////////////////////////////////////MEDIA QUERIES/////////////////////////////////
     
-@media only screen and(max-width:870px){ 
+@media only screen and(max-width:878px){
     .graph{    
         margin-top: 24rem !important;
         margin-bottom: 12rem !important;
@@ -255,6 +259,24 @@
         margin: 19rem 5rem 6rem 0 ;
 
         &__circle{
+            
+            &-1{
+                &::before{
+                    width:25.14rem;
+                    right:-11rem;
+
+                }
+
+
+                & .graph__circle__text-box{
+                    right:-46rem;
+
+                    &--left{
+                        right: 8.55rem;
+
+                    }
+                }
+            }
 
             &__text-box{
 

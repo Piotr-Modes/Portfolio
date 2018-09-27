@@ -6,8 +6,9 @@
 
 input[type=text], select, textarea {
 	
-    background: rgba(darken($color-footer,6%),.7);
-	float:right;
+    background: rgba(darken($color-footer,10%),.4);    
+	float:right;    
+    
     font-family: inherit;
     color:$color-white;
     font-size: 1.5rem;
@@ -27,6 +28,8 @@ input[type=text], select, textarea {
 input:focus, textarea:focus { 
     outline: none !important;
     box-shadow: 0 0 10px #719ECE;
+    background: rgba(darken($color-white,80%),.8);
+    background: rgba(darken($color-footer,10%),.6);
 }
 
 textarea{
