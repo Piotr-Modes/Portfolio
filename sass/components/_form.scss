@@ -1,0 +1,73 @@
+::placeholder{
+    color: $color-white;
+}
+
+
+
+input[type=text], select, textarea {
+	
+    background: rgba(darken($color-footer,6%),.7);
+	float:right;
+    font-family: inherit;
+    color:$color-white;
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 1.2rem;
+    height: 4.3rem;
+    border: none;
+    border-radius: .7rem;
+    box-sizing: border-box;
+    margin-top: .6rem;
+    margin-bottom: .7rem;
+    resize: vertical;
+    
+    @media only screen and(max-width:650px){height: 5rem;margin-top: .7rem;}
+}
+
+input:focus, textarea:focus { 
+    outline: none !important;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+textarea{
+    margin-top: .6rem;
+    height:9.9rem;
+    //height: 19rem;
+    @media only screen and(max-width:650px){height: 19rem;}
+    
+}
+
+.form__heading{
+    
+    margin-bottom: 3.4rem;
+    font-size:1.5rem;
+   
+    text-align: center;
+}
+
+.form__inputs{
+    margin-bottom: 1.8rem;
+}
+
+.form__submit{
+    display: block;
+    margin: 0 auto;
+}
+
+
+.container {
+	width:46vw;/*50%*/;
+    margin:0 auto;
+ 
+    @media only screen and(max-width:1300px){width: 60vw;}
+    @media only screen and(max-width:1000px){width: 70vw;}
+    @media only screen and(max-width:900px){width: 85vw;}
+}
+.col{
+	padding:0 .5rem;
+	width:49.3%;
+    display:inline-block;
+    
+    @media only screen and(max-width:650px){width: 100%;}
+}
+

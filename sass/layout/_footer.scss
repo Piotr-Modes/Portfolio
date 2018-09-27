@@ -1,0 +1,79 @@
+.footer{
+    
+    background: linear-gradient(to left,rgba(0,0,0,.1),rgba(0,0,0,.4),rgba(0,0,0,.5));
+    margin-top: 0rem;
+    
+    position: relative;
+    padding: 13rem 0 6rem 0;
+    font-family: arial;
+    
+    &__copyrights{
+        
+        margin-top: 3rem;
+        
+        & p:first-of-type{
+            font-style: none;
+            line-height: 2.5rem;
+            font-size:1.4rem;
+            letter-spacing: .3rem;
+            text-align: center;
+        }
+
+        & p:nth-of-type(2){
+            font-style: italic;
+            line-height: 1.5rem;
+            font-size:1.1rem;
+            text-align: center;
+        }
+
+        & span{
+            font-size:1.2rem;
+            text-align: center;
+        }
+        
+    }
+    
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+    
+
+
+    
+
+
+
+
+
+
+
+
+
+
+

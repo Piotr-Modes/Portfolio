@@ -1,0 +1,210 @@
+body{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: $default-font-size;
+    color:$color-white;
+    
+}
+
+
+.heading-primary{
+    color: $color-white;
+    line-height: 1.3;
+    
+    &--main{
+        font-size: 6rem/*8vh*/;
+        font-weight: 100;
+        line-height: 10vh;
+
+        @media only screen and(max-width:730px){
+            font-size: 5rem;
+            line-height: 6rem;
+        }
+        @media only screen and(max-width:730px){
+            font-size: 4rem;
+        }
+        
+        @media only screen and(max-width:460px){
+            font-size: 3.3rem;
+            line-height: 5rem;
+        }
+    }
+    
+    &--sub{
+        letter-spacing: .3rem;
+        font-size: 6vh;
+        font-weight: 700;
+        margin-bottom: .6rem;
+    }
+    
+    &--logo{
+        font-size: 14.5vh;
+    }
+    
+    &--big{
+        font-size: 12rem;
+    }
+
+}
+
+.heading-secondary{
+    font-size: 3.5rem;
+    
+    font-weight: 300;
+    
+    &--center{text-align: center;}
+    
+     @media only screen and(max-width:950px){
+        font-size: 2.8rem;
+
+    }
+    
+    @media only screen and(max-width:528px){ 
+        text-align: center !important; 
+    }
+    
+    
+    &--big{
+        font-weight: 500;
+        font-size: 5rem;
+        
+        
+        letter-spacing: .2rem;
+        line-height: 100%;
+        
+        
+        @media only screen and(max-width:950px){
+            font-size: 5rem;
+            
+            
+        }
+        @media only screen and(max-width:528px){ 
+            text-align: center !important; 
+            position: relative;
+        }
+            
+        & i{
+            @media only screen and(max-width:528px){ 
+                position: absolute;
+                left: 1rem;
+                top: -6.2rem;
+            }
+        }
+    }
+    
+    &--biger{
+        font-weight: 500;
+        font-size: 6rem;
+        letter-spacing: .2rem;
+        line-height: 100%;
+        position: relative;
+        
+        &::before{
+            display: block;
+            content: "";
+            width: 10rem;
+            height: .45rem;
+            margin: 0 auto;
+            background: $color-secondary;
+            position: absolute;
+            z-index: 1000;
+            left:-11rem;
+            bottom: 2.5rem;
+            border-radius: 5px;
+        }
+    }
+}
+
+.heading-tertiary{
+    font-size: 2.2rem;
+    font-weight: 300;
+}
+
+.heading-quad{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: $color-black;
+    margin-bottom: 1.2rem;
+    
+    &--white{
+        color: $color-white;
+    }
+}
+
+.paragraph{
+    font-size: 1.7rem;
+    color: $color-white;
+    line-height: 2.6rem;
+    line-height: 3.7rem;
+    
+    @media (max-width:520px){ 
+        font-size: 1.5rem;
+    }
+
+    
+    &--black{
+        color: $color-grey-dark-3;
+    }
+    
+    &--small{
+        font-size: 1.2rem;
+    }
+    
+    &--med{
+        font-size:  1.4rem;
+        line-height: 1.5rem;
+        
+    }
+    
+    &--grey-light{
+        color: $color-grey-light;
+    }
+    
+}
+
+
+
+.section-graphs{
+    
+    
+    & .fa-clipboard-list{
+        font-size: 4.5rem;
+        margin-right: 1.7rem;
+        margin-top: .6rem;
+        
+        @media only screen and(max-width:650px){ 
+            font-size: 4.7rem;
+        }
+        
+        
+    }
+    
+    & .fa-cog{
+        font-size: 4rem;
+        margin-right: 1.7rem;
+        @media only screen and(max-width:650px){ 
+            font-size: 4.2rem;
+        }
+    }
+}
+
+.section-responsive{
+    text-align: center;
+    &__header__icon{
+        font-size: 4.5rem;
+        margin-right: 1.7rem;
+        @media only screen and(max-width:650px){ 
+            font-size: 4.7rem;
+        }
+        
+    }
+}
+
+
+
+
+
+
+
+
+

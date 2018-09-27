@@ -1,0 +1,145 @@
+.btn{
+    &,
+    &:link,
+    &:visited{
+        text-decoration: none;
+        display: inline-block;
+        transition: all ease-in-out 0.2s ;
+        position: relative;
+        font-weight: 400;
+        cursor: pointer;
+    }
+    
+    &--transparent{
+        letter-spacing: .2rem;
+        padding: 1.1rem 2.8rem;
+        font-size: 2.2rem;
+        background: transparent;
+        border: 2px solid $color-white;
+        color: $color-white;
+        
+        & i{
+            font-size: 1.6rem;
+            margin-left: .5rem;
+            transition: transform ease-in-out 0.2s 0.1s;
+            
+        }
+        
+        &:hover{
+            
+            & i{
+                transform: translateY(3px) rotate(90deg);
+            }
+        }
+        
+        &--2{
+            border: 2px solid $color-grey-light-2;
+            color: $color-grey-light-2;
+            &:hover{
+                border: 2px solid $color-primary;
+                color: $color-primary;
+                
+            }
+        }
+        
+        &--3,&:visited{
+            padding: 1.1rem 2.8rem !important;
+            font-size: 2.2rem !important;
+            font-weight: 500 !important;
+            background: $color-secondary;
+            border: 2px solid $color-secondary;
+            color: $color-white;
+            
+            &:hover{
+                border: 2px solid $color-secondary;
+                color: $color-secondary;
+                background: transparent;
+                
+            }
+        }
+        
+        &--fill{
+            &:hover{
+                border: 2px solid $color-primary;
+                background: darken($color-primary,13%);
+                
+            }
+        }
+    }
+  
+    &--primary{
+        letter-spacing: .3rem;
+        padding: 1.4rem 3.6rem;
+        font-size: 1.6rem;
+        border: none;
+        background: $color-primary;
+        color: $color-white;
+        
+        &:hover{
+            background:darken($color-primary,10%);
+        }
+    }
+
+    &:active{
+        outline: none;
+        transform: translateY(1px);
+        box-shadow: 0 .5rem 1rem rgba($color-black,.2);
+    }
+    
+}
+
+
+.btn-text{
+    &:link,
+    &:visited{
+        
+        font-size: 1.3rem;
+        font-weight: 500;
+        color: $color-white;
+        display: inline-block;
+        text-decoration: none;
+        padding: 5px 0;
+        transition:all .2s;
+        border-bottom: 1px solid transparent;
+       
+    }
+    
+    &:hover{
+       
+        transform: translateY(-2px);
+        border-bottom: 1px solid $color-white;
+       
+    }
+    
+    &:active{
+        
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

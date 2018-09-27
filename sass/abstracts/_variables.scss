@@ -1,0 +1,55 @@
+//COLORS
+
+$color-primary: #4FD5D6;
+$color-secondary: #ff0000;
+
+
+$color-secondary-light: lighten($color-secondary,5%);
+$color-secondary-lighter: lighten($color-secondary,37%);
+
+
+$color-secondary-light-2: lighten(rgb(227,27,109),15%);
+$color-red: rgb(255,45,0);
+
+$color-grey-light1: #f7f7f7;
+$color-grey-light-2: rgb(245,245,245);
+$color-grey-light-3: rgb(110, 124, 133);
+$color-grey-light: lighten(rgb(37,41,52),25%);
+
+$color-grey-dark: rgb(37,41,52);
+$color-grey-dark-2: lighten(rgb(63,71,73),5%);
+$color-grey-dark-3:  rgb(130, 151, 167);
+
+$color-white: rgb(255, 255, 255);
+$color-black: darken(rgb(63,71,73),5%)/*rgb(87, 105, 127)*/;
+
+$color-footer: rgb(27, 36, 47);
+$color-header: rgb(37, 41, 52);
+
+//FONT
+$default-font-size:1.6rem;
+
+
+$site-width: 80%;
+
+
+//GRID
+$grid-width:90%;
+
+$gutter-vertical:5rem;
+$gutter-vertical-small:3rem;
+$gutter-horizontal:4rem;
+$gutter-horizontal-small:2rem;
+
+
+
+
+
+
+
+
+
+
+
+
+

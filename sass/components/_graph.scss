@@ -1,0 +1,441 @@
+.graph{
+    position: relative;
+    margin-top: 17rem;
+    margin-bottom: 12rem;
+    
+    &__vertical-line{
+        position: relative;
+        display: block;
+        width:37rem;
+        height:.2rem;
+        background:$color-grey-light;
+        transform:translateX(-50%) rotate(90deg);
+        position: absolute;
+        left:50%;
+        right:50%;
+        top:15rem;
+        
+        &::before{
+            z-index: 200;
+            content:"";
+            display:block;
+            height:.1rem;
+            width:22rem;
+            background:$color-primary;
+            position:absolute;
+            top:9.6rem;
+            left:7.9rem;
+        }
+    }
+    
+    &__circle{
+        z-index: 200;
+        position:relative;
+        width:9rem;
+        height:9rem;
+        background:$color-primary;
+        border-radius:50%;
+        margin:0 auto 2rem auto;
+        
+        &__icon{
+            position: absolute;
+            z-index: 300;
+            top:1.6rem;
+            left:2.3rem;
+            width: 9rem;
+            height: 9rem;
+            font-size: 6rem;
+        }
+        
+        &::before{
+            z-index: 100;
+            content:"";
+            display:block;
+            height:.1rem;
+            background:$color-primary;
+            position:absolute;
+            bottom:50%;
+            
+        }
+        
+        
+        &-1{
+            &::before{
+                width:32.4rem;
+                right:-11rem;
+                
+            }
+        
+            
+            & .graph__circle__text-box{
+                right:-46rem;
+                
+                &--left{
+                    right: 8.55rem;
+                    
+                }
+            }
+        }
+        
+        &-2{
+            &::before{ 
+                width:29rem; 
+                right:-15rem;
+                
+            }
+        
+            &::after{
+
+            }
+            
+            & .graph__circle__text-box{
+                right:-50rem;
+            }
+        }
+        
+        &-3{
+            
+            &__icon{
+                top:1.3rem;
+                left:2rem;
+            }
+        
+            &::before{ 
+                width:24rem;
+                right:-10rem;
+            }
+        
+            &::after{
+
+            }
+            
+            & .graph__circle__text-box{
+                right:-44.9rem;
+            }
+        }
+       
+        
+        &__text-box{
+            width:24rem;
+            height: 4rem;
+            background: /*$color-white */$color-grey-light;
+            line-height: 4rem;
+            position:absolute;
+            top:50%;
+            bottom:50%;
+            transform:translate(-50%, -50%);
+            transition:all .6s;
+            
+            &::before{
+                content: "";
+                display: block;
+                background: $color-grey-light;
+                height: 4rem;
+                width:4.5rem;
+                position: absolute;
+                top: 0;
+                transform: skewX(-30deg);
+            }
+            
+            &::after{
+                content:"";
+                display:block;
+                width:1rem;
+                height:1rem;
+                border-radius:50%;
+                transform:  translate(-50%, 40%);
+                background:$color-primary;
+                position:absolute;
+                bottom:50%;
+            }
+            
+            &--left{
+                top:10rem;
+                padding:0 0 .9rem 1.6rem; 
+                transform: translate(-55%, -36%) scale(1.1);
+                background: $color-white;
+                
+                & h3{
+                    color: $color-grey-light;
+                }
+                
+                & .graph__circle__text-box__head{
+                    &::after{
+                        z-index: 100;
+                        content:"";
+                        display:block;
+                        width: 5rem;
+                        transform: rotate(90deg);
+                        height:.1rem;
+                        background:$color-primary;
+                        position:absolute;
+                        top:-1.1rem;
+                        right:-1.7rem;
+                        
+                    }
+                } 
+                
+                &::before{
+                    transform: skewX(-30deg);
+                    right: -1.4rem;
+                }
+                
+                &::after{
+                    right:-.2rem;
+                }
+                
+            }
+            
+            &--right{
+                
+                text-align: right;
+                padding: 0 1.6rem .9rem 0;
+                
+                &::before{
+                    left:-1.4rem;
+                    transform: skewX(30deg);
+                }
+                
+                &::after{
+                    left:.8rem;
+                }
+                
+                &:hover{
+                    transform: translate(-43%, -50%) scale(1.1);
+                    background: $color-white;
+                }
+                
+                &:hover h3{
+                color: $color-grey-light ;
+                }
+            
+                &:hover p{
+                    color: $color-primary;
+                }
+                
+            }
+            
+            &__head{
+                margin-bottom: 1rem;
+            }
+            
+            &__paragraph{
+                padding-left: 5rem;
+                transition:all .6s;
+                
+                @media only screen and(max-width:950px){ transform: scale(1.1)}
+                
+                &--left{
+                    
+                    padding-left: 0;
+                    padding-right: 5rem;
+                    text-align: left;
+                    
+                    & p{
+                        color: $color-primary;
+                    }
+                    
+                }
+                
+            }
+            
+        }
+        
+    }
+    
+}
+
+/////////////////////////////////////MEDIA QUERIES/////////////////////////////////
+    
+@media only screen and(max-width:870px){ 
+    .graph{    
+        margin-top: 24rem !important;
+        margin-bottom: 12rem !important;
+        width: 60%;
+        margin: 19rem 5rem 6rem 0 ;
+
+        &__circle{
+
+            &__text-box{
+
+                &--left{
+                    
+                    top:-7rem;
+                    padding: 0 1.6rem .9rem 0; 
+                    transform: translate(150%, -36%) scale(1.1);
+                    
+                    background: $color-white;
+                    text-align: right;
+
+                    & .graph__circle__text-box__head{
+                        &::after{
+                            display: none;
+                            
+
+                        }
+                        
+                    } 
+
+                    &::before{
+                        transform: skewX(30deg);
+                        left: -1.4rem;
+                        background: lighten($color-secondary,0%);
+                    }
+
+                    &::after{
+                        background: transparent;
+                    }
+
+                }
+
+                &__paragraph{
+
+                    &--left{
+
+                        padding-left: 5rem;
+                        padding-right: 0rem;
+                        text-align: right;
+
+                        & p{
+                            color: $color-secondary-light;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media only screen and(max-width:766px){ 
+    .graph{
+        transform: translateX(-5vw);
+        
+    }
+}
+@media only screen and(max-width:640px){ 
+    .graph{
+        transform: translateX(-10vw);
+        
+    }
+}
+
+@media only screen and(max-width:527px){ 
+    
+    .graph{
+        transform: translateX(-10vw);
+        margin-top: 24rem !important;
+        
+        
+        &__vertical-line{
+            &::before{
+               background: transparent;
+                   
+            }
+        }
+        
+        &__circle{
+            z-index: 200;
+            position:relative;
+            width:8rem;
+            height:8rem;
+            border-radius:50%;
+            margin:0 auto 3rem auto;
+
+            &__icon{
+                position: absolute;
+                z-index: 300;
+                top:1.6rem;
+                left:2.1rem;
+                width: 9rem;
+                height: 9rem;
+                font-size: 5rem;
+            }
+            
+                &::before{
+                    width:10.4rem;
+                    
+                    right:-9.3rem;
+
+                }
+            
+
+                & .graph__circle__text-box{
+                    right:-44rem;
+                    
+                    &:hover{
+                        transform: translate(-43%, -50%) scale(1.05);
+                        background: $color-white;
+                    }
+
+                    &--left{
+                        right: 8.55rem;
+                        transform: translate(40.5rem,-1rem);
+                        
+                        &:hover{
+                            transform: translate(40.5rem,-1rem) scale(1);         
+                            
+                        }    
+
+                    }
+                    
+                }
+            
+            }
+        
+     }
+ 
+}
+
+
+@media only screen and(max-width:480px){ 
+    
+    .graph{
+        transform: translateX(-33vw) scale(1.1);
+        &__circle{
+            background: transparent;
+            
+            &::before{
+                background: transparent;
+    
+            }
+            
+            &__icon{
+               color: transparent;
+            }
+        }
+    }
+}
+
+@media only screen and(max-width:380px){ 
+    
+    .graph{
+        transform: translateX(-35vw)  ;
+        &__circle{
+            background: transparent;
+            
+            &::before{
+                background: transparent;
+    
+            }
+            
+            &__icon{
+               color: transparent;
+            }
+        }
+    }
+}
+
+@media only screen and(max-width:340px){ 
+    
+    .graph{
+        transform: translateX(-43vw)  ;
+        
+    }
+}
+
+
+
+
+

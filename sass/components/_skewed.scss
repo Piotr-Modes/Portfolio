@@ -1,0 +1,34 @@
+.skewed{
+    
+    position: relative;
+    max-width:90%/*29rem*/;
+    height: 4rem;
+    background: $color-grey-dark;
+    padding: 0 0 .9rem 1.6rem;
+    line-height: 4rem;
+    color: white;
+    
+    @media only screen and(max-width:790px){
+        max-width: 100%;
+    }
+    
+    &::after{
+        content: "";
+        display: block;
+        background: $color-grey-dark;
+        height: 4rem;
+        width:4.5rem;
+        position: absolute;
+        right:-1.4rem;
+        top: 0;
+        transform: skewX(-30deg);
+        
+        @media only screen and(max-width:790px){
+            display: none;
+        }    
+    
+    }
+    
+}
+
+

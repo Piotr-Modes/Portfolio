@@ -1,0 +1,167 @@
+
+
+@font-face {
+font-family: "FontAwesome";
+font-weight: normal;
+font-style : normal;
+       src : url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?v=4.3.0");
+       src : url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?#iefix&v=4.3.0") format("embedded-opentype"),
+             url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff2?v=4.3.0") format("woff2"),
+             url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff?v=4.3.0") format("woff"),
+             url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.ttf?v=4.3.0") format("truetype"),
+             url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular") format("svg");
+}
+
+
+////////////////////////////AKORD////////////////////////////////////
+
+#akord{
+    text-align: center;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    height: 390px /*200*/;
+    list-style-type: none;
+    font-size: 0;
+    
+    @media only screen and(max-width:765px){
+        height: auto;
+    }
+    
+}
+
+
+.tab{
+    color: $color-grey-dark;
+    background: $color-primary;
+    position:relative;
+    height: 390px;
+    width: 100px /*80*/;
+    display: inline-block;
+    overflow: hidden;
+    margin:0;
+    transition: all 0.5s ease-in-out 0.1s;
+    
+    
+    @media only screen and(max-width:765px){
+        width: 450px;
+        overflow: auto;
+        background: $color-white;
+    }
+    
+    @media only screen and(max-width:500px){
+        width: 100%;
+        
+    }
+    
+    
+    &:nth-of-type(odd) .content{
+        
+        @media only screen and(max-width:765px){
+            background: $color-white;
+            
+        }
+    }
+   
+}
+
+
+.tab:hover{
+    width: 450px;
+    
+    @media only screen and(max-width:500px){
+        width: 100%;
+    }
+}
+.tab:hover .social a.hidden:before{
+    margin-left: -100px;
+}
+.tab:hover .social a.hidden:after{
+    margin-left: 0px;
+}
+.content{
+    position: relative;
+    text-align: center;
+    background: $color-grey-light-2;
+    height: 390px;
+    width: 370px;
+    margin-left: 80px;
+    padding:70px 3rem 0 2rem;
+    
+    @media only screen and(max-width:765px){
+        width: 450px;
+        margin-left: 0;
+        
+    }
+    @media only screen and(max-width:765px){
+        width: 100%;
+        margin-left: 0;
+        padding:11rem 3rem;
+    }
+
+}
+
+.social a.hidden:before,
+.social a.hidden:after{
+    transition: all 0.4s ease-in-out 0.1s;
+    width: 80px;
+    height: 390px;
+    position: absolute;
+    text-indent: 0;
+    padding-top: 30px;
+    display: block;
+    font: normal 30px "FontAwesome";
+    color: white;
+    @media (max-width:765px){
+        display: none;
+        
+    }
+    
+}
+.social a.hidden:after{
+    font-size: 48px;
+    padding-top: 25px;
+    margin-left: 85px;
+    background: $color-secondary !important;
+}
+
+//////////////////////////////////ICONS///////////////////////////////
+
+.facebook a.hidden:after,
+.facebook a.hidden:before{
+    content: '\f03e'
+}
+
+.facebook a.hidden:after{
+    background: #3b5998;
+}
+
+.youtube a.hidden:after,
+.youtube a.hidden:before{
+    content: '\f121'
+}
+
+.youtube a.hidden:after{
+    background: #ff0000;
+}
+
+.twitter a.hidden:after,
+.twitter a.hidden:before{
+    content: '\f11b'
+}
+
+.twitter a.hidden:after{
+    background: #6dc5dd;
+}
+
+.instagram a.hidden:after,
+.instagram a.hidden:before{
+    content: '\f001'
+}
+
+.instagram a.hidden:after{
+    background: #6dc993;
+}
+
+
+
