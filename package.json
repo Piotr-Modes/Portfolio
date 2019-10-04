@@ -1,7 +1,7 @@
 {
-  "name": "take",
+  "name": "portfolio",
   "version": "1.0.0",
-  "description": "landing page for natours",
+  "description": "my portfolio",
   "main": "index.js",
   "scripts": {
     "watch:sass": "node-sass sass/main.scss css/style.css -w",

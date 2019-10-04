@@ -111,6 +111,7 @@ font-style : normal;
     padding-top: 30px;
     display: block;
     font: normal 30px "FontAwesome";
+    // font-weight: 900;
     color: white;
     @media (max-width:765px){
         display: none;
@@ -156,7 +157,8 @@ font-style : normal;
 
 .instagram a.hidden:after,
 .instagram a.hidden:before{
-    content: '\f001'
+    // content: '\f001'
+    content: '\f008'
 }
 
 .instagram a.hidden:after{

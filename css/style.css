@@ -1230,7 +1230,7 @@ body {
 
 .instagram a.hidden:after,
 .instagram a.hidden:before {
-  content: '\f001'; }
+  content: '\f008'; }
 
 .instagram a.hidden:after {
   background: #6dc993; }
